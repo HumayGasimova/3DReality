@@ -4,15 +4,28 @@
     display: block;
 }
 
-.cube-images {
+.cube-controller {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
-    bottom: 15px;
+    bottom: 5px;
     width: 100%;
-    .cube-image {
-        width: 70px;
-        height: 70px;
-        margin: 5px;
+    .cube-images {
+        display: flex;
+        justify-content: center;
+        .cube-image {
+            width: 70px;
+            height: 70px;
+            margin: 5px;
+        }
+    }
+    
+    .cube-text {
+        color: white;
+    }
+    a {
+        color: white;
     }
 }
+

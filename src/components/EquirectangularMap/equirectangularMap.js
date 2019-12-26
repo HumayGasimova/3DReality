@@ -307,91 +307,99 @@ export const EquirectangularMap = (props) => {
     return(
         <>
             <canvas className="cube-canvas" id="#container"/>
-            <div className="cube-images">
-                <Button 
-                    className="cube-options"
-                    onClick={() => setBackground(Background.AnniversaryLounge)}
-                >
-                    <img className="cube-image" src={AnniversaryLoungeCapture}/>
-                </Button>
-                <Button 
-                    className="cube-options"
-                    onClick={() => setBackground(Background.AutumnHockey)}
-                >
-                    <img className="cube-image" src={AutumnHockeyCapture}/>
-                </Button>
-                <Button 
-                    className="cube-options"
-                    onClick={() => setBackground(Background.BethnalGreenEntrance)}
-                >
-                    <img className="cube-image" src={BethnalGreenEntranceCapture}/>
-                </Button>
-                <Button 
-                    className="cube-options"
-                    onClick={() => setBackground(Background.DresdenMoat)}
-                >
-                    <img className="cube-image" src={DresdenMoatCapture}/>
-                </Button>
-                <Button 
-                    className="cube-options"
-                    onClick={() => setBackground(Background.GrayPier)}
-                >
-                    <img className="cube-image" src={GrayPierCapture}/>
-                </Button>
-                <Button 
-                    className="cube-options"
-                    onClick={() => setBackground(Background.Lebombo)}
-                >
-                    <img className="cube-image" src={LebomboCapture}/>
-                </Button>
-                <Button 
-                    className="cube-options"
-                    onClick={() => setBackground(Background.MistyPines)}
-                >
-                    <img className="cube-image" src={MistyPinesCapture}/>
-                </Button>
-                <Button 
-                    className="cube-options"
-                    onClick={() => setBackground(Background.MusicHall)}
-                >
-                    <img className="cube-image" src={MusicHallCapture}/>
-                </Button>
-                <Button 
-                    className="cube-options"
-                    onClick={() => setBackground(Background.SkukuzaGolf)}
-                >
-                    <img className="cube-image" src={SkukuzaGolfCapture}/>
-                </Button>
-                <Button 
-                    className="cube-options"
-                    onClick={() => setBackground(Background.SnowyPark)}
-                >
-                    <img className="cube-image" src={SnowyParkCapture}/>
-                </Button>
-                <Button 
-                    className="cube-options"
-                    onClick={() => setBackground(Background.SpruitSunrise)}
-                >
-                    <img className="cube-image" src={SpruitSunriseCapture}/>
-                </Button>
-                <Button 
-                    className="cube-options"
-                    onClick={() => setBackground(Background.SunnyVondelpark)}
-                >
-                    <img className="cube-image" src={SunnyVondelparkCapture}/>
-                </Button>
-                <Button 
-                    className="cube-options"
-                    onClick={() => setBackground(Background.UmhlangaSunrise)}
-                >
-                    <img className="cube-image" src={UmhlangaSunriseCapture}/>
-                </Button>
-                <Button 
-                    className="cube-options"
-                    onClick={() => setBackground(Background.UrbanStreet)}
-                >
-                    <img className="cube-image" src={UrbanStreetCapture}/>
-                </Button>
+            <div className="cube-controller">
+                <div className="cube-images">
+                    <Button 
+                        className="cube-options"
+                        onClick={() => setBackground(Background.AnniversaryLounge)}
+                    >
+                        <img className="cube-image" src={AnniversaryLoungeCapture}/>
+                    </Button>
+                    <Button 
+                        className="cube-options"
+                        onClick={() => setBackground(Background.AutumnHockey)}
+                    >
+                        <img className="cube-image" src={AutumnHockeyCapture}/>
+                    </Button>
+                    <Button 
+                        className="cube-options"
+                        onClick={() => setBackground(Background.BethnalGreenEntrance)}
+                    >
+                        <img className="cube-image" src={BethnalGreenEntranceCapture}/>
+                    </Button>
+                    <Button 
+                        className="cube-options"
+                        onClick={() => setBackground(Background.DresdenMoat)}
+                    >
+                        <img className="cube-image" src={DresdenMoatCapture}/>
+                    </Button>
+                    <Button 
+                        className="cube-options"
+                        onClick={() => setBackground(Background.GrayPier)}
+                    >
+                        <img className="cube-image" src={GrayPierCapture}/>
+                    </Button>
+                    <Button 
+                        className="cube-options"
+                        onClick={() => setBackground(Background.Lebombo)}
+                    >
+                        <img className="cube-image" src={LebomboCapture}/>
+                    </Button>
+                    <Button 
+                        className="cube-options"
+                        onClick={() => setBackground(Background.MistyPines)}
+                    >
+                        <img className="cube-image" src={MistyPinesCapture}/>
+                    </Button>
+                    <Button 
+                        className="cube-options"
+                        onClick={() => setBackground(Background.MusicHall)}
+                    >
+                        <img className="cube-image" src={MusicHallCapture}/>
+                    </Button>
+                    <Button 
+                        className="cube-options"
+                        onClick={() => setBackground(Background.SkukuzaGolf)}
+                    >
+                        <img className="cube-image" src={SkukuzaGolfCapture}/>
+                    </Button>
+                    <Button 
+                        className="cube-options"
+                        onClick={() => setBackground(Background.SnowyPark)}
+                    >
+                        <img className="cube-image" src={SnowyParkCapture}/>
+                    </Button>
+                    <Button 
+                        className="cube-options"
+                        onClick={() => setBackground(Background.SpruitSunrise)}
+                    >
+                        <img className="cube-image" src={SpruitSunriseCapture}/>
+                    </Button>
+                    <Button 
+                        className="cube-options"
+                        onClick={() => setBackground(Background.SunnyVondelpark)}
+                    >
+                        <img className="cube-image" src={SunnyVondelparkCapture}/>
+                    </Button>
+                    <Button 
+                        className="cube-options"
+                        onClick={() => setBackground(Background.UmhlangaSunrise)}
+                    >
+                        <img className="cube-image" src={UmhlangaSunriseCapture}/>
+                    </Button>
+                    <Button 
+                        className="cube-options"
+                        onClick={() => setBackground(Background.UrbanStreet)}
+                    >
+                        <img className="cube-image" src={UrbanStreetCapture}/>
+                    </Button>
+                </div>
+                <div className="cube-text">
+                    Created by Humay Gasimova {"<qasimovahumay@mail.com>"}
+                </div>
+                <div className="cube-text">
+                    All photos from <a href="https://hdrihaven.com/">www.hdrihaven.com</a>
+                </div>
             </div>
         </>
     );
