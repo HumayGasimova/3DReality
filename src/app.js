@@ -14,8 +14,6 @@ import {
 * Components
 */
 
-import Tutorial from './components/Tutorial/tutorial';
-import Cube from './components/Cube/cube';
 import EquirectangularMap from './components/EquirectangularMap/equirectangularMap';
 
 /**

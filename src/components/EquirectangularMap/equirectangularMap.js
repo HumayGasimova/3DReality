@@ -34,18 +34,6 @@ import Button from '../../library/Button/button';
 import './equirectangularMap.scss';
 
 /**
-* Actions
-*/
-
-import * as Actions from '../../actions';
-
-/**
-* Selectors
-*/
-
-import * as Selectors from '../../reducers/selectors';
-
-/**
 * Constants
 */
 
@@ -91,7 +79,7 @@ import UrbanStreetCapture from '../../images/Backgrounds/capture/urban_street_01
 
 export const EquirectangularMap = (props) => {
 
-    const [backgroundTexture, setBackgroundTexture] = useState(AnniversaryLounge);
+    const [backgroundTexture, setBackgroundTexture] = useState(UrbanStreet);
 
     /**
     * Methods
@@ -319,7 +307,6 @@ export const EquirectangularMap = (props) => {
     return(
         <>
             <canvas className="cube-canvas" id="#container"/>
-            {console.log("state",backgroundTexture)}
             <div className="cube-images">
                 <Button 
                     className="cube-options"
@@ -414,13 +401,11 @@ export default connect(
     (state) => {
         return {
             // menuButtonIsPressed: Selectors.getMenuButtonIsPressedState(state),
-            // sidebarOnInit: Selectors.getSidebarOnInitState(state)
         };
     },
     (dispatch) => {
         return {
             // menuButtonIsToggled: bindActionCreators(Actions.menuButtonIsToggled, dispatch),
-            // activateIcon: bindActionCreators(Actions.activateIcon, dispatch)
         };
     }
 )(EquirectangularMap);
